@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Shibuli digital electronics</title>
+  <meta name="description" content="Checkout — place your order at Shibuli digital electronics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand"><span class="logo"><i class="fas fa-bolt"></i></span>Tech<span>Hub</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="checkout.html" class="active">Checkout</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn" id="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Checkout</span></div>
+      <h1>Checkout</h1>
+      <p>Fill in your details and place your order. We'll email you a confirmation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="checkout-layout">
+        <div class="checkout-form">
+          <h3>Customer details</h3>
+
+          <!-- Web3Forms checkout form -->
+          <form id="checkoutForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="696dc6c7-86c2-4f26-8779-1bf1a3fc1c60">
+            <input type="hidden" name="subject" value="New Electronics Shop Order">
+            <input type="hidden" name="from_name" value="Shibuli digital electronics">
+            <input type="hidden" name="subtotal" id="subtotal" value="">
+            <input type="hidden" name="items_count" id="items_count" value="">
+
+            <div class="form-grid">
+              <div class="form-control full">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-control">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="0712345678" required />
+              </div>
+              <div class="form-control">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="customer@email.com" required />
+              </div>
+              <div class="form-control full">
+                <label>Delivery Location</label>
+                <input type="text" name="location" placeholder="Kakamega / Nairobi / etc." required />
+              </div>
+              <div class="form-control full">
+                <label>Order Details</label>
+                <textarea id="orderDetails" name="message" readonly required style="min-height:160px"></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top:18px; display:flex; gap:12px;">
+              <button type="submit" class="btn btn-primary" id="placeOrderBtn"><i class="fas fa-bag-shopping"></i> Place Order</button>
+              <button type="button" class="btn btn-ghost" id="editCartBtn">Edit Cart</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="cart-summary">
+          <h3>Order Summary</h3>
+          <div id="orderSummaryList" style="margin-top:12px"></div>
+          <div style="margin-top:12px" class="summary-row total"><span>Total</span><span id="summaryTotal">KSh 0</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Shibuli digital electronics. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

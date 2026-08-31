@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shibuli digital electronics — Powering Your World With Better Technology</title>
+  <meta name="description" content="Shibuli digital electronics — quality smartphones, laptops, TVs, audio and accessories in Kenya at prices you'll love." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand"><span class="logo"><i class="fas fa-bolt"></i></span>Shibuli digital electronics</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html?cat=smartphones">Smartphones</a></li>
+          <li><a href="shop.html?cat=laptops">Laptops</a></li>
+          <li><a href="shop.html?cat=tvs">TVs</a></li>
+          <li><a href="checkout.html">Deals</a></li>
+        </ul>
+        <div class="nav-actions">
+          <form class="search-box" data-search>
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search products..." aria-label="Search" />
+            <button type="submit" aria-label="Search"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <a href="cart.html" class="cart-btn" id="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow" style="color:#7dd3fc">Welcome to Shibuli digital electronics</span>
+        <h1>Powering Your World With <span class="hl">Better Technology.</span></h1>
+        <p class="lead">Discover quality smartphones, laptops, accessories and electronics at prices you'll love.</p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn btn-accent btn-lg"><i class="fas fa-bag-shopping"></i> Shop Now</a>
+          <a href="shop.html?sort=discount" class="btn btn-ghost btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.4)">Explore Deals <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div><span>15K+</span><small>Happy customers</small></div>
+          <div><span>500+</span><small>Products</small></div>
+          <div><span>4.9★</span><small>Avg. rating</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge-main">📦</div>
+        <div class="floating i1"><i class="fas fa-truck-fast"></i><div><b>Free delivery</b><small>Nairobi &amp; beyond</small></div></div>
+        <div class="floating i2"><i class="fas fa-shield-halved"></i><div><b>2-year warranty</b><small>On all devices</small></div></div>
+        <div class="floating i3"><i class="fas fa-headset"></i><div><b>24/7 support</b><small>We're here for you</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFER STRIP ============ -->
+  <div class="offer-strip">
+    <div class="track">
+      <span><i class="fas fa-bolt"></i> Up to 20% off smartphones</span>
+      <span><i class="fas fa-truck"></i> Free delivery on orders over KSh 15,000</span>
+      <span><i class="fas fa-rotate-left"></i> 7-day easy returns</span>
+      <span><i class="fas fa-tag"></i> M-Pesa &amp; Cash on Delivery accepted</span>
+      <span><i class="fas fa-gift"></i> Free accessories with laptops</span>
+      <span><i class="fas fa-bolt"></i> Up to 20% off smartphones</span>
+      <span><i class="fas fa-truck"></i> Free delivery on orders over KSh 15,000</span>
+      <span><i class="fas fa-rotate-left"></i> 7-day easy returns</span>
+      <span><i class="fas fa-tag"></i> M-Pesa &amp; Cash on Delivery accepted</span>
+      <span><i class="fas fa-gift"></i> Free accessories with laptops</span>
+    </div>
+  </div>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Browse by category</span>
+        <h2>Popular Categories</h2>
+        <p>Find exactly what you need across our most loved electronics ranges.</p>
+      </div>
+      <div class="cat-grid" id="categories-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Hand-picked</span>
+        <h2>Featured Products</h2>
+        <p>Our team's top picks this week — the best value and the best tech.</p>
+      </div>
+      <div class="product-grid" id="featured-grid"></div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="shop.html" class="btn btn-outline btn-lg">View All Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Shibuli</span>
+        <h2>Why Choose Us</h2>
+        <p>We make buying electronics simple, safe and affordable.</p>
+      </div>
+      <div class="feature-grid" id="features-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEST SELLERS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Loved by customers</span>
+        <h2>Best Sellers</h2>
+        <p>The products Kenyans keep coming back for.</p>
+      </div>
+      <div class="product-grid" id="bestsellers-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL OFFERS ============ -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Limited time</span>
+        <h2>Special Offers</h2>
+        <p>Grab these deals before they're gone — prices you won't see again.</p>
+      </div>
+      <div class="product-grid" id="offers-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Customer love</span>
+        <h2>What Our Customers Say</h2>
+        <p>Real feedback from real Shibuli shoppers across Kenya.</p>
+      </div>
+      <div class="testimonial-grid" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Ready to upgrade your tech?</h2>
+        <p>Join thousands of happy customers and get the latest gadgets delivered to your door at unbeatable prices.</p>
+        <a href="shop.html" class="btn btn-light btn-lg"><i class="fas fa-bag-shopping"></i> Start Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand"><span class="logo"><i class="fas fa-bolt"></i></span>Shibuli digital electronics</a>
+          <p>Kenya's trusted electronics store. We bring you quality smartphones, laptops, TVs and accessories at prices you'll love.</p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?cat=smartphones">Smartphones</a></li>
+            <li><a href="shop.html?cat=laptops">Laptops</a></li>
+            <li><a href="shop.html?cat=tvs">TVs</a></li>
+            <li><a href="shop.html?cat=audio">Audio</a></li>
+            <li><a href="shop.html?cat=gaming">Gaming</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="color:#94a3b8">Get deals and new arrivals in your inbox.</p>
+          <form class="newsletter" onsubmit="event.preventDefault();TechHub.store.toast('Subscribed! Thanks for joining.','success');this.reset();">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Shibuli digital electronics. All rights reserved.</span>
+        <div class="pay">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fas fa-mobile-screen-button" title="M-Pesa"></i>
+          <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

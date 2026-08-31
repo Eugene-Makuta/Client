@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — Shibuli digital electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand"><span class="logo"><i class="fas fa-bolt"></i></span>Shibuli digital electronics</a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="shop.html?cat=smartphones">Smartphones</a></li>
+          <li><a href="shop.html?cat=laptops">Laptops</a></li>
+          <li><a href="shop.html?cat=tvs">TVs</a></li>
+          <li><a href="checkout.html">Deals</a></li>
+        </ul>
+        <div class="nav-actions">
+          <form class="search-box" data-search>
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search products..." aria-label="Search" />
+            <button type="submit" aria-label="Search"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <a href="cart.html" class="cart-btn" id="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PRODUCT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumb" id="breadcrumb"></div>
+      <div id="product-root">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand"><span class="logo"><i class="fas fa-bolt"></i></span>Shibuli digital electronics</a>
+          <p>Kenya's trusted electronics store. We bring you quality smartphones, laptops, TVs and accessories at prices you'll love.</p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?cat=smartphones">Smartphones</a></li>
+            <li><a href="shop.html?cat=laptops">Laptops</a></li>
+            <li><a href="shop.html?cat=tvs">TVs</a></li>
+            <li><a href="shop.html?cat=audio">Audio</a></li>
+            <li><a href="shop.html?cat=gaming">Gaming</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="color:#94a3b8">Get deals and new arrivals in your inbox.</p>
+          <form class="newsletter" onsubmit="event.preventDefault();TechHub.store.toast('Subscribed! Thanks for joining.','success');this.reset();">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Shibuli digital electronics. All rights reserved.</span>
+        <div class="pay">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fas fa-mobile-screen-button" title="M-Pesa"></i>
+          <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
